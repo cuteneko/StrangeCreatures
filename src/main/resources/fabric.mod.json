@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "strange_creatures",
+  "version": "${version}",
+  "name": "CuteCuteCN",
+  "description": "",
+  "authors": [
+    "CrystalNeko"
+  ],
+  "contact": {
+    "repo": "https://github.com/CuteNeko/StrangeCreatures"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/strange_creatures/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.cneko.strange.client.StrangeCreaturesClient"
+    ],
+    "main": [
+      "org.cneko.strange.StrangeCreatures"
+    ]
+  },
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "minecraft": "*"
+  }
+}
