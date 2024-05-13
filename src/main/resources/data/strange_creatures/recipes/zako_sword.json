@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " W ",
+    " W ",
+    " R "
+  ],
+  "key": {
+    "W": {
+      "tag": "minecraft:fishes"
+    },
+    "R": {
+      "tag": "c:rods"
+    }
+  },
+  "result": {
+    "item": "strange_creatures",
+    "count": 1
+  }
+}
+

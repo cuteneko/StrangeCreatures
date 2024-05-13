@@ -2,10 +2,13 @@
   "schemaVersion": 1,
   "id": "strange_creatures",
   "version": "${version}",
-  "name": "CuteCuteCN",
+  "name": "奇怪の生物",
   "description": "",
   "authors": [
     "CrystalNeko"
+  ],
+  "contributors": [
+    "猫猫团子_Official"
   ],
   "contact": {
     "repo": "https://github.com/CuteNeko/StrangeCreatures"

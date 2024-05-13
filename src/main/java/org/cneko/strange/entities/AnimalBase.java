@@ -6,21 +6,23 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import org.cneko.strange.util.Genders;
+import org.cneko.strange.types.GenderTypes;
 import org.jetbrains.annotations.Nullable;
 
-public abstract class AnimalBase extends Animal{
-    private Genders gender;
+public abstract class AnimalBase extends Animal implements Creatures{
+    private GenderTypes gender;
 
     protected AnimalBase(EntityType<? extends Animal> entityType, Level level) {
         super(entityType, level);
-        this.gender = Genders.getRandom();
+        this.gender = GenderTypes.getRandom();
     }
 
-    public void setGender(Genders gender) {
+    @Override
+    public void setGender(GenderTypes gender) {
         this.gender = gender;
     }
-    public Genders getGender() {
+    @Override
+    public GenderTypes getGender() {
         return this.gender;
     }
 
