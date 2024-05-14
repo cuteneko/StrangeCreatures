@@ -1,3 +1,6 @@
 {
-  "itemGroup.strange_creatures.strange": "奇怪生物"
+  "itemGroup.strange_creatures.strange": "奇怪生物",
+  "item.strange_creatures.zako_sword": "杂鱼剑",
+  "item.strange_creatures.zako_sword.tooltip": "♡杂鱼~杂鱼~♡",
+  "sound.strange_creatures.zako": "杂鱼~♡"
 }

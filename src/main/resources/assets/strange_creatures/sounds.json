@@ -1,0 +1,10 @@
+{
+  "zako_0": {
+    "subtitle": "sound.strange_creatures.zako",
+    "sounds": [
+      "zako_0",
+      "zako_1",
+      "zako_2"
+    ]
+  }
+}
