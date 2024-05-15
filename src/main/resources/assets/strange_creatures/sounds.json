@@ -2,9 +2,9 @@
   "zako_0": {
     "subtitle": "sound.strange_creatures.zako",
     "sounds": [
-      "zako_0",
-      "zako_1",
-      "zako_2"
+      "strange_creatures:zako_0",
+      "strange_creatures:zako_1",
+      "strange_creatures:zako_2"
     ]
   }
 }
