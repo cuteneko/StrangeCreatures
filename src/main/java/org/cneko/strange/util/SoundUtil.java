@@ -8,7 +8,7 @@ import net.minecraft.world.level.Level;
 
 public class SoundUtil {
     public static SoundEvent getSound(String namespace, String id,float f) {
-        return SoundEvent.createFixedRangeEvent(new ResourceLocation(namespace, id), f);
+        return SoundEvent.createVariableRangeEvent(new ResourceLocation(namespace, id));
     }
     public static SoundEvent getSound(String namespace, String id) {
         return getSound(namespace, id, 1.0f);

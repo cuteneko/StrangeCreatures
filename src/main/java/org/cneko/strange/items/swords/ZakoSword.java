@@ -25,11 +25,10 @@ public class ZakoSword extends SwordBase {
     }
 
     @Override
-    public boolean hurtEnemy(ItemStack itemStack, LivingEntity attacker, LivingEntity entity){
-        super.hurtEnemy(itemStack, attacker, entity);
+    public boolean hurtEnemy(ItemStack itemStack, LivingEntity target, LivingEntity attacker){
         // 播放杂鱼音效
         SoundUtil.playSound(attacker, getSound("strange_creatures", "zako"));
-        return true;
+        return super.hurtEnemy(itemStack, target, attacker);
     }
 
     @Override
