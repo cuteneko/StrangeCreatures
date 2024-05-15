@@ -10,7 +10,6 @@ public class TieredBase implements Tier {
     private int uses = 1;
     private float speed = 1;
     private float attackDamageBonus = 1f;
-    TagKey<Block> incorrectBlocksForDrops;
     private int enchantmentValue;
     private Ingredient repairIngredient = Ingredient.EMPTY;
     @Override
@@ -35,18 +34,15 @@ public class TieredBase implements Tier {
         return attackDamageBonus;
     }
 
+    @Override
+    public int getLevel() {
+        return 1;
+    }
+
     public void setAttackDamageBonus(float attackDamageBonus) {
         this.attackDamageBonus = attackDamageBonus;
     }
 
-    @Override
-    public @NotNull TagKey<Block> getIncorrectBlocksForDrops() {
-        return incorrectBlocksForDrops;
-    }
-
-    public void setIncorrectBlocksForDrops(TagKey<Block> incorrectBlocksForDrops) {
-        this.incorrectBlocksForDrops = incorrectBlocksForDrops;
-    }
 
     @Override
     public int getEnchantmentValue() {

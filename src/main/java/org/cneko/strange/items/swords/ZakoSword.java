@@ -8,9 +8,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.Level;
 import org.cneko.strange.items.SwordBase;
 import org.cneko.strange.items.TieredBase;
 import org.cneko.strange.util.SoundUtil;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.Random;
@@ -31,7 +33,7 @@ public class ZakoSword extends SwordBase {
     }
 
     @Override
-    public void appendHoverText(ItemStack itemStack, TooltipContext tooltipContext, List<Component> list, TooltipFlag tooltipFlag) {
+    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> list, TooltipFlag tooltipFlag) {
         list.add(Component.translatable("item.strange_creatures.zako_sword.tooltip"));
     }
 
@@ -44,7 +46,6 @@ public class ZakoSword extends SwordBase {
         tier.setAttackDamageBonus(0.5F);
         tier.setEnchantmentValue(10);
         tier.setRepairIngredient(Ingredient.of(ItemTags.FISHES));
-        tier.setIncorrectBlocksForDrops(BlockTags.DIRT);
         return tier;
     }
 
