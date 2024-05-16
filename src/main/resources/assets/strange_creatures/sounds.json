@@ -1,10 +1,11 @@
 {
   "zako": {
+    "category": "voice",
     "subtitle": "sound.strange_creatures.zako",
     "sounds": [
-      "strange_creatures:zako_0",
-      "strange_creatures:zako_1",
-      "strange_creatures:zako_2"
+      "strange_creatures:zako/zako_0",
+      "strange_creatures:zako/zako_1",
+      "strange_creatures:zako/zako_2"
     ]
   }
 }

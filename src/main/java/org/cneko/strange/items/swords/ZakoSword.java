@@ -1,9 +1,11 @@
 package org.cneko.strange.items.swords;
 
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
@@ -11,6 +13,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import org.cneko.strange.items.SwordBase;
 import org.cneko.strange.items.TieredBase;
+import org.cneko.strange.types.Sounds;
 import org.cneko.strange.util.SoundUtil;
 import org.jetbrains.annotations.Nullable;
 
@@ -26,8 +29,8 @@ public class ZakoSword extends SwordBase {
 
     @Override
     public boolean hurtEnemy(ItemStack itemStack, LivingEntity target, LivingEntity attacker){
-        // 播放杂鱼音效
-        SoundUtil.playSound(attacker, getSound("strange_creatures", "zako"));
+        attacker.playSound(Sounds.ZAKO);
+        target.playSound(Sounds.ZAKO);
         return super.hurtEnemy(itemStack, target, attacker);
     }
 

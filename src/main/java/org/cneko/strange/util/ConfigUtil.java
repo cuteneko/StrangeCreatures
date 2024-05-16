@@ -37,7 +37,11 @@ public class ConfigUtil {
     }
 
     public static boolean getNSFW(){
-        return Objects.requireNonNull(getConfig()).getBoolean("nsfw", false);
+        try {
+            return getConfig().getBoolean("nsfw", false);
+        }catch (Exception e){
+            return false;
+        }
     }
 
     public static void load(){

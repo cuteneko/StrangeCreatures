@@ -8,7 +8,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import org.cneko.strange.types.Gender;
 import org.jetbrains.annotations.Nullable;
-
 public abstract class AnimalBase extends Animal implements Creatures{
     private Gender gender;
 
