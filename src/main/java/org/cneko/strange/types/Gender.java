@@ -6,14 +6,36 @@ public class Gender {
     private GenderTypes gender = GenderTypes.UNKNOWN;
     private String customGender = "";
 
+    public Gender(String v){
+        if(v != null){
+            if(v.equalsIgnoreCase("male")){
+                this.setGender(GenderTypes.MALE);
+            }else if(v.equalsIgnoreCase("female")){
+                this.setGender(GenderTypes.FEMALE);
+            }else if(v.equalsIgnoreCase("custom")){
+                this.setGender(GenderTypes.CUSTOM);
+            }
+        }
+    }
+    public Gender(){
+    }
     public Component getCustomGender() {
         return Component.translatable(customGender);
+    }
+    public String getCustomGenderString() {
+        return customGender;
     }
     public void setCustomGender(String customGender) {
         this.customGender = customGender;
     }
     public GenderTypes getGender() {
         return gender;
+    }
+    public String getGenderString() {
+        if (gender == GenderTypes.CUSTOM) return "custom";
+        if (gender == GenderTypes.MALE) return "male";
+        if (gender == GenderTypes.FEMALE) return "female";
+        return "unknown";
     }
     public void setGender(GenderTypes gender) {
         this.gender = gender;
