@@ -1,9 +1,7 @@
-package org.cneko.strange.items;
+package org.cneko.strange.types;
 
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.NotNull;
 
 public class TieredBase implements Tier {

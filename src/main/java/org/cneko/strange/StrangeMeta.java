@@ -1,7 +1,5 @@
 package org.cneko.strange;
 
-import org.cneko.ctlib.common.util.meta.PluginMeta;
-
 import java.util.logging.Logger;
 
 import static org.cneko.strange.StrangeCreatures.MODID;
