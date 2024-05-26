@@ -36,11 +36,15 @@ jobs:
     - name: Build with Gradle Wrapper
       run: ./gradlew build
 
-    - name: Upload JAR artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: my-jar-file
-        path: ./build/libs/*.jar
+    - name: Upload JAR artifacts
+      run: |
+        for jarfile in ./build/libs/*.jar; do
+        artifact_name=$(basename "$jarfile")
+        echo "Uploading JAR artifact: $artifact_name"
+        actions/upload-artifact@v3 \
+        with: name="$artifact_name" path="$jarfile"
+        done
+
     # NOTE: The Gradle Wrapper is the default and recommended way to run Gradle (https://docs.gradle.org/current/userguide/gradle_wrapper.html).
     # If your project does not have the Gradle Wrapper configured, you can use the following configuration to run Gradle with a specified version.
     #
