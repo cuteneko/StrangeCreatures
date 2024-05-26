@@ -9,7 +9,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import org.cneko.strange.items.SwordBase;
-import org.cneko.strange.types.TieredBase;
 import org.cneko.strange.types.Sounds;
 import org.jetbrains.annotations.Nullable;
 

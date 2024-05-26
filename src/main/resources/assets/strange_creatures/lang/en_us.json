@@ -2,7 +2,9 @@
   "itemGroup.strange_creatures.strange": "Strange Creatures",
   "item.strange_creatures.zako_sword": "Zako Sword",
   "item.strange_creatures.zako_sword.tooltip": "♡zako~zako~♡",
-  "item.strange_creatures.jinkela": "jinkela",
+  "item.strange_creatures.jinkela": "Jinkela",
   "item.strange_creatures.jinkela.tooltip": "§aThe fertilizer is mixed with golden garbage, and one bag can be used to spread two bags.",
+  "item.strange_creatures.steel_plate": "Steel Plate",
+  "item.strange_creatures.steel_plate.tooltip": "§aHow is steel plate made",
   "sound.strange_creatures.zako": "zako~♡"
 }

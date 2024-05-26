@@ -16,6 +16,8 @@ public class ItemGroups {
             .title(Component.translatable("itemGroup.strange_creatures.strange"))
             .displayItems((context, entries) -> {
                 entries.accept(Items.ZAKO_SWORD);
+                entries.accept(Items.JINKELA);
+                entries.accept(Items.STEEL_PLATE);
             })
             .build();
     public static void register(){

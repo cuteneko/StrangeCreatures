@@ -1,0 +1,10 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {"tag": "c:bone_dusts"}
+  ],
+  "result": {
+    "item": "strange_creatures:steel_plate",
+    "count": 1
+  }
+}
