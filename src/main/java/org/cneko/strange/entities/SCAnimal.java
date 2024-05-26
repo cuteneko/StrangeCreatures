@@ -9,9 +9,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import org.cneko.strange.types.Gender;
 import org.jetbrains.annotations.Nullable;
-public abstract class AnimalBase extends Animal implements Creatures{
+public abstract class SCAnimal extends Animal implements Creatures{
     private Gender gender;
-    protected AnimalBase(EntityType<? extends Animal> entityType, Level level) {
+    protected SCAnimal(EntityType<? extends Animal> entityType, Level level) {
         super(entityType, level);
     }
 
@@ -33,7 +33,7 @@ public abstract class AnimalBase extends Animal implements Creatures{
     @Override
     public abstract AgeableMob getBreedOffspring(ServerLevel serverLevel, AgeableMob ageableMob);
 
-    public void getChildBase(AnimalBase entity ,ServerLevel world){
+    public void getChildBase(SCAnimal entity , ServerLevel world){
         entity.setGender(Gender.getRandom());
         entity.setAge(-48000);
     }

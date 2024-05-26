@@ -7,9 +7,9 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
-public abstract class ArmorBase extends ArmorItem{
+public abstract class SCArmor extends ArmorItem{
 
-    public ArmorBase(ArmorMaterial armorMaterial, Type type, Properties properties) {
+    public SCArmor(ArmorMaterial armorMaterial, Type type, Properties properties) {
         super(armorMaterial, type, properties);
     }
 

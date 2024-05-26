@@ -5,8 +5,8 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
-public abstract class SwordBase extends SwordItem {
-    public SwordBase(TieredBase tier, Properties properties) {
+public abstract class SCSword extends SwordItem {
+    public SCSword(TieredBase tier, Properties properties) {
         super(tier,0,0, properties);
     }
 

@@ -8,14 +8,14 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
-import org.cneko.strange.items.SwordBase;
+import org.cneko.strange.items.SCSword;
 import org.cneko.strange.types.Sounds;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
 import static org.cneko.strange.util.SoundUtil.getSound;
-public class ZakoSword extends SwordBase {
+public class ZakoSword extends SCSword {
     public static final String ID = "zako_sword";
     public ZakoSword() {
         super(createTier(), new Properties().durability(500).rarity(Rarity.COMMON));

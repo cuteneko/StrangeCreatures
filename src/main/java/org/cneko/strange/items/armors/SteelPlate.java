@@ -9,12 +9,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
-import org.cneko.strange.items.ArmorBase;
+import org.cneko.strange.items.SCArmor;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class SteelPlate extends ArmorBase {
+public class SteelPlate extends SCArmor {
     public static final String ID = "steel_plate";
     public SteelPlate() {
         super(createMaterial(),Type.CHESTPLATE, new Properties());
@@ -27,7 +27,7 @@ public class SteelPlate extends ArmorBase {
 
     public static ArmorMaterialBase createMaterial(){
         ArmorMaterialBase material = new ArmorMaterialBase();
-        material.setName("steel_plate");
+        material.setName(ID);
         material.setProtection(Type.CHESTPLATE, 4); // 抗性4
         material.setDurability(Type.CHESTPLATE, 150); // 耐久150
         material.setRepairIngredient(Ingredient.of(TagKey.create(Registries.ITEM,new ResourceLocation("c","steel_ingots")))); // 使用钢锭修复

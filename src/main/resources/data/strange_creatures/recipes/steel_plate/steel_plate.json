@@ -1,7 +1,7 @@
 {
   "type": "crafting_shapeless",
   "ingredients": [
-    {"tag": "c:bone_dusts"}
+    {"tag": "c:steel_plates"}
   ],
   "result": {
     "item": "strange_creatures:steel_plate",
