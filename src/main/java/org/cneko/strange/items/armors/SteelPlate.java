@@ -10,6 +10,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import org.cneko.strange.items.SCArmor;
+import org.cneko.strange.types.TagKeys;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -30,7 +31,7 @@ public class SteelPlate extends SCArmor {
         material.setName(ID);
         material.setProtection(Type.CHESTPLATE, 4); // 抗性4
         material.setDurability(Type.CHESTPLATE, 150); // 耐久150
-        material.setRepairIngredient(Ingredient.of(TagKey.create(Registries.ITEM,new ResourceLocation("c","steel_ingots")))); // 使用钢锭修复
+        material.setRepairIngredient(Ingredient.of(TagKeys.C_STEEL_INGOTS)); // 使用钢锭修复
         material.setToughness(1.0f); // 韧性1
         material.setKnockbackResistance(0.0f);
         material.setEquipSound(SoundEvents.ANVIL_FALL);
