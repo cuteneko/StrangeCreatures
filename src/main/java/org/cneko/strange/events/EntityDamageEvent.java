@@ -8,7 +8,6 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
-import org.cneko.strange.items.armors.SteelPlate;
 import org.cneko.strange.types.TagKeys;
 
 public class EntityDamageEvent {
@@ -23,7 +22,7 @@ public class EntityDamageEvent {
         // 判断实体是否穿了钢板
         if (entity.getItemBySlot(EquipmentSlot.CHEST).is(TagKeys.C_STEEL_PLATES)) {
             // 发送铁砧音效
-            entity.playSound(SoundEvents.ANVIL_FALL, 1.0F, 1.0F);
+            entity.playSound(SoundEvents.ANVIL_PLACE, 1.0F, 1.0F);
         }
     }
 }
